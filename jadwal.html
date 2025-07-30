@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jadwal Sekolah & Piket</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f0f4f8;
+      color: #333;
+      padding: 20px;
+    }
+    h1, h2 {
+      text-align: center;
+      animation: fadeInDown 0.8s ease;
+    }
+    .jadwal-container {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .day-section {
+      background: white;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      animation: fadeInUp 0.6s ease;
+    }
+    .day-section h3 {
+      margin-top: 0;
+      color: #4a90e2;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: center;
+    }
+    th {
+      background: #e3f2fd;
+    }
+    .piket-table {
+      margin-top: 30px;
+    }
+
+    @keyframes fadeInUp {
+      from {opacity: 0; transform: translateY(20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    @keyframes fadeInDown {
+      from {opacity: 0; transform: translateY(-20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    @media (max-width: 600px) {
+      table, th, td {
+        font-size: 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Jadwal Sekolah & Piket Mingguan</h1>
+  <div class="jadwal-container">
+
+    <!-- Template untuk hari -->
+    <div class="day-section">
+      <h3>Senin</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Jam</th>
+            <th>Mata Pelajaran</th>
+            <th>Guru</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>07.00 - 07.15</td><td>Upacara</td><td>Wali Kelas</td></tr>
+          <tr><td>07.15 - 08.00</td><td>Matematika</td><td>Bu Rina</td></tr>
+          <tr><td>08.00 - 08.45</td><td>Bahasa Indonesia</td><td>Pak Doni</td></tr>
+          <tr><td>08.45 - 09.00</td><td><strong>Istirahat</strong></td><td>-</td></tr>
+          <tr><td>09.00 - 09.45</td><td>IPS</td><td>Bu Sari</td></tr>
+          <tr><td>09.45 - 10.30</td><td>IPA</td><td>Pak Joko</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="day-section">
+      <h3>Selasa</h3>
+      <table>
+        <thead><tr><th>Jam</th><th>Mata Pelajaran</th><th>Guru</th></tr></thead>
+        <tbody>
+          <tr><td>07.00 - 07.45</td><td>Bahasa Inggris</td><td>Bu Mia</td></tr>
+          <tr><td>07.45 - 08.30</td><td>Seni Budaya</td><td>Pak Budi</td></tr>
+          <tr><td>08.30 - 08.45</td><td><strong>Istirahat</strong></td><td>-</td></tr>
+          <tr><td>08.45 - 09.30</td><td>PPKn</td><td>Bu Tika</td></tr>
+          <tr><td>09.30 - 10.15</td><td>Prakarya</td><td>Pak Rian</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="day-section">
+      <h3>Rabu</h3>
+      <table>
+        <thead><tr><th>Jam</th><th>Mata Pelajaran</th><th>Guru</th></tr></thead>
+        <tbody>
+          <tr><td>07.00 - 07.45</td><td>Matematika</td><td>Bu Rina</td></tr>
+          <tr><td>07.45 - 08.30</td><td>IPS</td><td>Bu Sari</td></tr>
+          <tr><td>08.30 - 08.45</td><td><strong>Istirahat</strong></td><td>-</td></tr>
+          <tr><td>08.45 - 09.30</td><td>Bahasa Daerah</td><td>Pak Rudi</td></tr>
+          <tr><td>09.30 - 10.15</td><td>Penjaskes</td><td>Pak Dimas</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="day-section">
+      <h3>Kamis</h3>
+      <table>
+        <thead><tr><th>Jam</th><th>Mata Pelajaran</th><th>Guru</th></tr></thead>
+        <tbody>
+          <tr><td>07.00 - 07.45</td><td>IPA</td><td>Pak Joko</td></tr>
+          <tr><td>07.45 - 08.30</td><td>Bahasa Indonesia</td><td>Pak Doni</td></tr>
+          <tr><td>08.30 - 08.45</td><td><strong>Istirahat</strong></td><td>-</td></tr>
+          <tr><td>08.45 - 09.30</td><td>Agama</td><td>Bu Rahma</td></tr>
+          <tr><td>09.30 - 10.15</td><td>Prakarya</td><td>Pak Rian</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="day-section">
+      <h3>Jumat</h3>
+      <table>
+        <thead><tr><th>Jam</th><th>Mata Pelajaran</th><th>Guru</th></tr></thead>
+        <tbody>
+          <tr><td>07.00 - 07.45</td><td>Bahasa Inggris</td><td>Bu Mia</td></tr>
+          <tr><td>07.45 - 08.30</td><td>PPKn</td><td>Bu Tika</td></tr>
+          <tr><td>08.30 - 08.45</td><td><strong>Istirahat</strong></td><td>-</td></tr>
+          <tr><td>08.45 - 09.30</td><td>Penjaskes</td><td>Pak Dimas</td></tr>
+          <tr><td>09.30 - 10.00</td><td>Bersih Kelas</td><td>Semua</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Jadwal Piket -->
+    <div class="day-section piket-table">
+      <h3>Jadwal Piket</h3>
+      <table>
+        <thead><tr><th>Hari</th><th>Nama Siswa</th></tr></thead>
+        <tbody>
+          <tr><td>Senin</td><td>Andi, Rina, Tono</td></tr>
+          <tr><td>Selasa</td><td>Siska, Dedi, Nita</td></tr>
+          <tr><td>Rabu</td><td>Lina, Edo, Reza</td></tr>
+          <tr><td>Kamis</td><td>Agus, Mira, Budi</td></tr>
+          <tr><td>Jumat</td><td>Rafi, Nanda, Sari</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+</body>
+</html>
